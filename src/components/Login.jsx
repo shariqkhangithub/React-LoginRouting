@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Navigate, Route } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 export const Login = () => {
@@ -23,7 +22,7 @@ export const Login = () => {
             
         }
         else{
-            alert("enter your correct id")
+            alert("please enter valid username or password")
         }
 
     }
