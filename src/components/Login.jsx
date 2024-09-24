@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import "./Login.css"
 
 export const Login = () => {
 
@@ -28,9 +29,10 @@ export const Login = () => {
     }
 
   return (
-    <div>
-        <p>Username: <input type="text" value={username} onChange={input1Handler} /></p>
-        <p>password: <input type="password" value={password} onChange={input2Handler} /></p>
+    <div className='main'>
+        <h1>LOG IN</h1>
+        <p>Username: <br /> <input type="text" value={username} onChange={input1Handler} /></p>
+        <p>password: <br /><input type="password" value={password} onChange={input2Handler} /></p>
         <button onClick={result}>login</button>
     </div>
   )
